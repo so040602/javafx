@@ -10,7 +10,7 @@ public class DeleteMain {
         // 사본에서 푸시하려고 시도함
         // 날씨가 많이 덥네요.
         // 오늘 점심은 시원한 것으로 먹읍시다.
-
+        // 내가 먼저 푸시함
 
         Scanner scan = new Scanner(System.in);
         GamaDao dao = new GamaDao();
