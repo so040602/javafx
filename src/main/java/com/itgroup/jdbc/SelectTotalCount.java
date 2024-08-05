@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class SelectTotalCount {
     public static void main(String[] args) {
+        //count 파일입니다.
         Scanner scan = new Scanner(System.in);
         GamaDao dao = new GamaDao();
         int count = 0;

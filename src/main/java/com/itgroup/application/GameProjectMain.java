@@ -11,7 +11,7 @@ public class GameProjectMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        //프로젝트 메인입니다
+
         String fxmlfile = Utility.FXML_PATH + "GameProject.fxml";
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlfile));
 
