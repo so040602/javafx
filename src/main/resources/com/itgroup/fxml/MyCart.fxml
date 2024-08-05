@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.MyCartController">
+    <ImageView fx:id="cartImage" />
+   <top>
+      <AnchorPane prefHeight="90.0" prefWidth="745.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="totalValue" layoutX="483.0" layoutY="30.0" mnemonicParsing="false" text="총합" onAction="#totalValue">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+            <Button fx:id="myCartDelete" layoutX="112.0" layoutY="30.0" mnemonicParsing="false" text="삭제" onAction="#deleteCart">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <VBox prefHeight="329.0" prefWidth="412.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="335.0" fitWidth="372.0" pickOnBounds="true" preserveRatio="false" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="373.0" prefWidth="690.0">
+         <children>
+            <TableView fx:id="cartTableView" prefHeight="355.0" prefWidth="690.0" >
+              <columns>
+                  <TableColumn prefWidth="111.0" text="Column X" />
+                  <TableColumn prefWidth="111.0" text="Column X" />
+                  <TableColumn prefWidth="111.0" text="Column X" />
+                  <TableColumn prefWidth="111.0" text="Column X" />
+                  <TableColumn prefWidth="111.0" text="Column X" />
+                  <TableColumn prefWidth="111.0" text="Column X" />
+              </columns>
+            </TableView>
+            <Pagination fx:id="pagination" currentPageIndex="1" minHeight="62.0" pageCount="10" prefWidth="745.0" />
+         </children></VBox>
+   </center>
+</BorderPane>
